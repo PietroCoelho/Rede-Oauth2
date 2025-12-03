@@ -27,24 +27,7 @@ O pacote está disponível no [Packagist](https://packagist.org/packages/pietroc
 **Importante:** Como ainda não há uma versão estável publicada, você precisa usar `dev-master`:
 
 ```bash
-composer require pietrocoelho/erede-php-oauth:dev-master
-```
-
-Se você receber um erro sobre `minimum-stability`, adicione no seu `composer.json`:
-
-```json
-{
-    "require": {
-        "pietrocoelho/erede-php-oauth": "dev-master"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
-}
-```
-
-Depois execute:
-```bash
-composer update pietrocoelho/erede-php-oauth
+composer require pietrocoelho/erede-php-oauth
 ```
 
 ### Via Docker
