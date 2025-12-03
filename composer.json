@@ -1,0 +1,38 @@
+{
+    "name": "pietrocoelho/erede-php-oauth",
+    "description": "SDK PHP para integração com eRede utilizando autenticação OAuth 2.0",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.5",
+        "psr/http-client": "^1.0",
+        "psr/http-message": "^1.0",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rede\\": "src/Rede/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rede\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --configuration phpunit.xml",
+        "test:filter": "./vendor/bin/phpunit --testdox  tests --filter",
+        "phpstan": "phpstan analyse --configuration phpstan.neon",
+        "cs-check": "phpcs --standard=PSR12 src tests",
+        "cs-fix": "phpcbf --standard=PSR12 src tests"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
+
