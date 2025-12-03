@@ -24,7 +24,6 @@ Este SDK possui as seguintes funcionalidades:
 
 O pacote está disponível no [Packagist](https://packagist.org/packages/pietrocoelho/erede-php-oauth).
 
-**Importante:** Como ainda não há uma versão estável publicada, você precisa usar `dev-master`:
 
 ```bash
 composer require pietrocoelho/erede-php-oauth
