@@ -9,7 +9,7 @@ namespace Rede;
  */
 class Transaction
 {
-    private float $amount;
+    private int|float $amount;
     private string $reference;
     private ?string $tid = null;
     private ?CreditCard $creditCard = null;
@@ -24,7 +24,7 @@ class Transaction
     private array $urls = [];
     private ?string $softDescriptor = null;
 
-    public function __construct(float $amount, string $reference = '')
+    public function __construct(int|float $amount, string $reference = '')
     {
         $this->amount = $amount;
 

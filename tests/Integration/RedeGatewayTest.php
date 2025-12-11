@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace Rede\Tests\Integration;
 
 use PHPUnit\Framework\TestCase;
-use Rede\Device;
 use Rede\Environment;
 use Rede\eRede;
 use Rede\OAuth\OAuthClient;
 use Rede\Store;
-use Rede\SubMerchant;
 use Rede\Transaction;
-use Rede\Url;
 
 /**
  * Testes de integração reais com a API eRede

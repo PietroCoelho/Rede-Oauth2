@@ -44,7 +44,6 @@ class AuthenticatedHttpClient implements HttpClientInterface
     {
         // Garante que temos um token válido
         $this->ensureValidToken();
-
         $request = $request->withHeader('Authorization', $this->token->toAuthorizationHeader());
         $request = $request->withHeader('Content-Type', 'application/json');
         $request = $request->withHeader('Accept', 'application/json');
